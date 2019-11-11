@@ -145,11 +145,16 @@ function animateWidth(width, value,input){
 		if(timePassed >50) 
 			clearInterval(timer);
 	},20);
+};
+function androidShare(){
+	if (/Android/i.test(navigator.userAgent)) {
+    	
+  	}
 }
 
 function initDocument(){
 	autocomplete(document.getElementById("myInput"), users);
 	document.getElementById("autocomplete_icon").addEventListener('click',activeAutocomplete);
 	document.querySelector(".autocomplete_input").style.width="0px";
-	document.querySelector(".main__post-user_location")addEventListener("click", androidShare);
+	document.querySelector(".main__post-user_location").addEventListener("click", androidShare);
 }
