@@ -2,9 +2,7 @@
 
 .menu{
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include flex-jc();
 	&__section{
 		width: 100%;
 		height: 46px;
@@ -13,7 +11,7 @@
 	&__user{
 		&-title{
 			display: block;
-			color: #3e3e3e;
+			color: $main-color;
 			font-family: "Source Sans Pro";
 			font-size: 16px;
 			margin: 0;
@@ -60,11 +58,9 @@
 		}
 	}
 	&__navlink{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@include flex-jc();
 		&-item{
-			color: #3e3e3e;
+			color: $main-color;
 			font-family: "Source Sans Pro";
 			font-size: 15px;
 			font-weight: 400;
@@ -89,14 +85,10 @@
 	}
 	&__user_actions-block{
 		width: 55%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@include flex-jc();
 	}
 	&__search{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@include flex-jc();
 		width: 320px;
 		&-item{
 			cursor: pointer;
@@ -107,15 +99,13 @@
 	}
 	&__bell{
 		font-size: 16px;
-		color: #3e3e3e;
+		color: $main-color;
 		cursor: pointer;
 	}
 	&__login{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@include flex-jc();
 		&-text{
-			color: #3e3e3e;
+			color: $main-color;
 			font-family: "Source Sans Pro";
 			font-size: 15px;
 			font-weight: 400;
@@ -124,14 +114,14 @@
 		}
 		&-icon{
 			margin-left: 9px;
-			color: #3e3e3e;
+			color: $main-color;
 			font-size: 20px;
 			cursor: pointer;
 		}
 	}
 	&__lang{
 		&-text{
-			color: #3e3e3e;
+			color: $main-color;
 			font-family: "Source Sans Pro";
 			font-size: 15px;
 			font-weight: 400;
@@ -147,12 +137,10 @@ form{
 .autocomplete {
   /*the container must be positioned relative:*/
   width:300px;
-  display: flex;
-  justify-content: flex-end;
+  @include flex-jc();
   position: relative;
   height: 100%;
   display: flex;
-  align-items: center;
 
   &__other{
   	display: flex;
@@ -199,7 +187,7 @@ form{
 		  background-color: #fff; 
 		  
 		  &:hover {
-			  background-color: #e9e9e9; 
+			  background-color: $color; 
 			}
 		}
 	}

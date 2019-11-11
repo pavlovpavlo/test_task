@@ -148,7 +148,11 @@ function animateWidth(width, value,input){
 };
 function androidShare(){
 	if (/Android/i.test(navigator.userAgent)) {
-    	
+    	navigator.share({
+    		title: document.title,
+    		text: "test",
+    		url: window.location.href
+    	})
   	}
 }
 
