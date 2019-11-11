@@ -433,6 +433,20 @@ body {
   background-color: #ffffff;
 }
 
+.menu__mobile {
+  display: none;
+  padding-right: 32px;
+  padding-left: 32px;
+  height: 36px;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #e6e6e6;
+}
+
+.menu__mobile-item {
+  cursor: pointer;
+}
+
 .menu__user-title {
   display: block;
   color: #3e3e3e;
@@ -734,6 +748,18 @@ form {
     margin-right: 0;
   }
 
+  .menu__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .menu__logo-block {
     width: 325px;
   }
@@ -902,15 +928,12 @@ form {
   margin-right: 17px;
 }
 
-.main__post-user_likes i {
-  font-size: 14px;
-  color: #3e3e3e;
+.main__post-user_likes img {
   margin-right: 4px;
 }
 
-.main__post-user_likes i:hover {
+.main__post-user_likes img:hover {
   cursor: pointer;
-  color: red;
 }
 
 .main__post-user_likes span {
@@ -931,9 +954,7 @@ form {
   cursor: pointer;
 }
 
-.main__post-user_comments i {
-  font-size: 17px;
-  color: #3e3e3e;
+.main__post-user_comments img {
   margin-right: 5px;
 }
 
@@ -952,12 +973,7 @@ form {
   border-radius: 40px;
 }
 
-.main__post-user_location i {
-  font-size: 11px;
-  color: #ffffff;
-}
-
-.main__post-user_location i:hover {
+.main__post-user_location img:hover {
   cursor: pointer;
 }
 
@@ -1015,12 +1031,7 @@ form {
   margin-right: 15px;
 }
 
-.main__post-footer_share i {
-  color: #3e3e3e;
-  font-size: 17px;
-}
-
-.main__post-footer_share i:hover {
+.main__post-footer_share img:hover {
   cursor: pointer;
 }
 
@@ -1034,12 +1045,7 @@ form {
   margin-right: 13px;
 }
 
-.main__post-footer_star i {
-  color: #e8c516;
-  font-size: 18px;
-}
-
-.main__post-footer_star i:hover {
+.main__post-footer_star img:hover {
   cursor: pointer;
 }
 
@@ -1052,12 +1058,7 @@ form {
   align-items: center;
 }
 
-.main__post-footer_ellipsis i {
-  color: #3e3e3e;
-  font-size: 15px;
-}
-
-.main__post-footer_ellipsis i:hover {
+.main__post-footer_ellipsis img:hover {
   cursor: pointer;
 }
 
