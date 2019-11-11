@@ -1,0 +1,13 @@
+@import 'normalize';
+//Базовые настройки сетки
+@import 'grid';
+//настройки цветов
+@import 'colors';
+//настройки шрифтов
+@import 'fonts';
+//Настройки интерфейса
+@import 'interface';
+
+@import 'blocks/menu';
+
+@import 'blocks/main';
